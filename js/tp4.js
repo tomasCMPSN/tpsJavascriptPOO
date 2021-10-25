@@ -6,7 +6,7 @@ class Productos{
     }
 
     mostrarDatos(){
-        document.write(`Código: ${this.codigo}
+        document.write(`<br>Código: ${this.codigo}
         <br>Nombre: ${this.nombre}
         <br>Precio: ${this.precio}`);
     }
@@ -18,4 +18,6 @@ let esponja = new Productos(333333, `Esponja`, 200);
 
 let productos = [arroz, fideos, esponja];
 
-esponja.mostrarDatos();
+for(i = 0; i < productos.length; i++){
+    productos[i].mostrarDatos();
+}
